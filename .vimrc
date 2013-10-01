@@ -13,6 +13,8 @@ filetype plugin indent on
 Bundle 'itchyny/lightline.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'vim-scripts/vim-auto-save'
+Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
 
 " tab and indent
 set ts=2 sw=2
