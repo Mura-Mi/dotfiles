@@ -16,12 +16,25 @@ Bundle 'vim-scripts/vim-auto-save'
 Bundle 'tpope/vim-fugitive'
 Bundle 'gregsexton/gitv'
 Bundle 'surround.vim'
+Bundle 'ruby-matchit'
+Bundle 'switch.vim'
+Bundle 'tpope/vim-rails'
 
 " tab and indent
 set ts=2 sw=2
 set autoindent
+set smartindent
 set expandtab
-"
+
+" highlight wrap
+set showmatch
+
+" make fast to access terminal
+set ttyfast
+
+" search setting
+set hlsearch
+
 " auto indent
 vnoremap <silent> > >gv
 vnoremap <silent> < <gv
@@ -34,10 +47,27 @@ set number
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 
+" showing cursor line
+set ruler
+set cursorline
+
+" status line
+set laststatus=2
+set showcmd
+set statusline+=%h
+
+" scroll
+set scrolloff=5
+
 " syntax
 syntax on
+filetype plugin on
+filetype indent on
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
-"
+
+" color setting
+set t_Co=256
+
 " lightline.vim
 let g:lightline = {
   \ 'colorshceme' : 'wombat',
