@@ -19,6 +19,7 @@ Bundle 'surround.vim'
 Bundle 'ruby-matchit'
 Bundle 'switch.vim'
 Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
 
 " tab and indent
 set ts=2 sw=2
@@ -39,6 +40,10 @@ set hlsearch
 vnoremap <silent> > >gv
 vnoremap <silent> < <gv
 
+" ruby hash style 1.8 -> 1.9
+vnoremap <silent> <C-m> :s/:\([a-zA-Z0-9_]\+\)\s*=>/\1:/g<CR>
+nnoremap <silent> <C-m> :s/:\([a-zA-Z0-9_]\+\)\s*=>/\1:/g<CR>
+
 " Shorten waiting time when press ESC
 set ttimeoutlen=10         
 
@@ -49,7 +54,9 @@ nnoremap <F4> :NumbersOnOff<CR>
 
 " showing cursor line
 set ruler
-set cursorline
+" set cursorline
+" hi CursorLine cterm=none ctermfg=none ctermbg=200
+" ctermbg=242
 
 " status line
 set laststatus=2
@@ -78,7 +85,7 @@ if !has('gui_running')
 endif
 
 " vim-auto-save
-let g:auto_save = 1
+let g:auto_save = 0
 
 " ##### TAB PAGE #####
 " Anywhere SID.
