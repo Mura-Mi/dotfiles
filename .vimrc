@@ -5,6 +5,9 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
+Bundle 'kchmck/vim-coffee-script'
+
+syntax enable
 
 filetype plugin indent on
 " ##### vundle Setting #####
@@ -19,7 +22,6 @@ Bundle 'surround.vim'
 Bundle 'ruby-matchit'
 Bundle 'switch.vim'
 Bundle 'tpope/vim-rails'
-Bundle 'kchmck/vim-coffee-script'
 
 " tab and indent
 set ts=2 sw=2
