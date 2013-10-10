@@ -14,7 +14,6 @@ filetype plugin indent on
 
 " Vundle 
 Bundle 'itchyny/lightline.vim'
-Bundle 'myusuf3/numbers.vim'
 Bundle 'vim-scripts/vim-auto-save'
 Bundle 'tpope/vim-fugitive'
 Bundle 'gregsexton/gitv'
@@ -22,6 +21,9 @@ Bundle 'surround.vim'
 Bundle 'ruby-matchit'
 Bundle 'switch.vim'
 Bundle 'tpope/vim-rails'
+if v:version > 702 
+  Bundle 'myusuf3/numbers.vim'
+endif
 
 " tab and indent
 set ts=2 sw=2
