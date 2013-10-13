@@ -75,6 +75,11 @@ syntax on
 filetype plugin on
 filetype indent on
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+" change cursor if japanese input on
+if has('multi_byte_ime') || has('xim') 
+  highlight Cursor guifg=NONE guibg=White
+  highlight CursorIM guifg=NONE guibg=DarkRed
+endif
 
 " color setting
 set t_Co=256
