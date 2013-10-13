@@ -9,3 +9,6 @@ fi
 
 alias ll='ls -l'
 alias la='ls -la'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
