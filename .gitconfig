@@ -1,0 +1,13 @@
+[user]
+	name = Takuya \"Mura-Mi\" Murakami
+	email = mura.mi.nantoka@gmail.com
+[alias]
+	st = status
+	b = branch
+  co = checkout
+  lg = log --oneline
+  di = diff
+  ad = add
+
+[core]
+	editor = /usr/bin/vim
