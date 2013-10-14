@@ -4,10 +4,15 @@
 [alias]
 	st = status
 	b = branch
+  ba = branch -a
+  br = branch -r
+  bar = branch -ar
+  bd = branch -d
   co = checkout
   lg = log --oneline
   di = diff
   ad = add
+  rb = rebase
 
 [core]
 	editor = /usr/bin/vim
