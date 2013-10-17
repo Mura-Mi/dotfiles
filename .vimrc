@@ -44,6 +44,10 @@ set hlsearch
 vnoremap <silent> > >gv
 vnoremap <silent> < <gv
 
+" move to head of line on press 0
+nnoremap <expr> 0
+\  match(strpart(getline('.'), 0, col('.') - 1), '^\s\+$') >= 0 ? '0' : '^'
+
 " ruby hash style 1.8 -> 1.9
 vnoremap <silent> <C-m> :s/:\([a-zA-Z0-9_]\+\)\s*=>/\1:/g<CR>
 nnoremap <silent> <C-m> :s/:\([a-zA-Z0-9_]\+\)\s*=>/\1:/g<CR>
