@@ -24,6 +24,9 @@ Bundle 'tpope/vim-rails'
 if v:version > 702 
   Bundle 'myusuf3/numbers.vim'
 endif
+Bundle 'tpope/vim-commentary'
+Bundle 'terryma/vim-multiple-cursors'
+
 
 " tab and indent
 set ts=2 sw=2
