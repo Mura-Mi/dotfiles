@@ -9,8 +9,10 @@
   bar = branch -ar
   bd = branch -d
   co = checkout
+  cob = checkout -b
   lg = log --oneline
   di = diff
+  df = diff
   ad = add
   rb = rebase
 
