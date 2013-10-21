@@ -91,6 +91,12 @@ endif
 " color setting
 set t_Co=256
 
+" color setting for diff
+hi DiffAdd ctermfg=black ctermbg=2
+hi DiffChange ctermfg=black ctermbg=3
+hi DiffDelete ctermfg=black ctermbg=6
+hi DiffText ctermfg=black ctermbg=7
+
 " lightline.vim
 let g:lightline = {
   \ 'colorshceme' : 'wombat',
