@@ -43,6 +43,9 @@ set ttyfast
 " search setting
 set hlsearch
 
+" command history
+set history=200
+
 " auto indent
 vnoremap <silent> > >gv
 vnoremap <silent> < <gv
