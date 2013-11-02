@@ -26,7 +26,7 @@ if v:version > 702
 endif
 Bundle 'tpope/vim-commentary'
 Bundle 'terryma/vim-multiple-cursors'
-
+Bundle 'elzr/vim-json'
 
 " tab and indent
 set ts=2 sw=2
@@ -60,6 +60,13 @@ nnoremap <silent> <C-m> :s/:\([a-zA-Z0-9_]\+\)\s*=>/\1:/g<CR>
 
 " Shorten waiting time when press ESC
 set ttimeoutlen=10         
+
+""" KEYMAPS 
+" swap locical and physical j/k 
+nnoremap k gk
+nnoremap gk k
+nnoremap j gj
+nnoremap gj j
 
 " number
 set number
