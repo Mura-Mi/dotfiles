@@ -12,7 +12,7 @@ alias la='ls -la'
 alias vir='vim -R'
 alias vimr='vim -R'
 
-alias guess='nkf --guess
+alias guess='nkf --guess'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
