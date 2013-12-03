@@ -70,6 +70,7 @@ nnoremap gj j
 
 " number
 set number
+nnoremap <F2> :setlocal spell! spelllang=en_us<CR>
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 
