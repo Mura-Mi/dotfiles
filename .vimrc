@@ -27,6 +27,7 @@ endif
 Bundle 'tpope/vim-commentary'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'elzr/vim-json'
+Bundle 'mattn/emmet-vim'
 
 " tab and indent
 set ts=2 sw=2
@@ -119,6 +120,11 @@ endif
 
 " vim-auto-save
 let g:auto_save = 0
+
+" matchit
+if !exists('loaded_matchit')
+  runtime macros/matchit.vim
+endif
 
 " ##### TAB PAGE #####
 " Anywhere SID.
