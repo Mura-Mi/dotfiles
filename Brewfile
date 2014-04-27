@@ -1,27 +1,46 @@
-install cloog-ppl015
-install cmake
-install freetype
-install gcc47
-install gdbm
-install git
-install gmp4
-install gradle
-install libpng
-install imagemagick
-install jpeg
-install libmpc08
-install libtool
-install libyaml
-install mpfr2
-install mysql
-install nkf
-install node
-install openssl
-install ossp-uuid
-install pkg-config
-install postgresql
-install ppl011
-install readline
-install ruby
-install tree
-install wget
+tap phinze/homebrew-cask || true
+tap homebrew/versions || true
+tap homebrew/binary || true
+update || true
+install brew-cask || true
+install vim || true
+install jq || true
+install cloog-ppl015 || true
+install cmake || true
+install freetype || true
+install gcc47 || true
+install gdbm || true
+install git || true
+install gmp4 || true
+install gradle || true
+install libpng || true
+install imagemagick || true
+install jpeg || true
+install libmpc08 || true
+install libtool || true
+install libyaml || true
+install mpfr2 || true
+install mysql || true
+install nkf || true
+install node || true
+install openssl || true
+install ossp-uuid || true
+install pkg-config || true
+install postgresql || true
+install ppl011 || true
+install readline || true
+install ruby || true
+install tree || true
+install wget || true
+cask install vagrant || true
+cask install evernote || true
+cask install dropbox || true
+cask install skype || true
+cask install google-chrome || true
+cask install yorufukurou || true
+cask install kobito || true
+cask install virtualbox || true
+cask install eclipse-ide || true
+cask install google-japanese-ime || true
+cask install skitch || true
+cask install sourcetree || true
