@@ -27,7 +27,7 @@ NeoBundle 'ruby-matchit'
 NeoBundle 'switch.vim'
 NeoBundle 'tpope/vim-rails'
 if v:version > 702 
-  Bundle 'myusuf3/numbers.vim'
+  NeoBundle 'myusuf3/numbers.vim'
 endif
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'terryma/vim-multiple-cursors'
