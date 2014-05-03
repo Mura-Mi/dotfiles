@@ -2,32 +2,37 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'kchmck/vim-coffee-script'
+" set rtp+=~/dotfiles/neobundle.vim
+if has('vim_starting')
+  set runtimepath+=~/myconfig/neobundle.vim
+  call neobundle#rc(expand('~/.vim/'))
+endif
 
 syntax enable
 
 filetype plugin indent on
-" ##### vundle Setting #####
+" ##### NeoBundle Setting #####
 
-" Vundle 
-Bundle 'itchyny/lightline.vim'
-Bundle 'vim-scripts/vim-auto-save'
-Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'
-Bundle 'surround.vim'
-Bundle 'ruby-matchit'
-Bundle 'switch.vim'
-Bundle 'tpope/vim-rails'
+" NeoBundle 
+NeoBundleCheck
+NeoBundleFetch 'Shugo/neobundle.vim'
+
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'vim-scripts/vim-auto-save'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'gregsexton/gitv'
+NeoBundle 'surround.vim'
+NeoBundle 'ruby-matchit'
+NeoBundle 'switch.vim'
+NeoBundle 'tpope/vim-rails'
 if v:version > 702 
   Bundle 'myusuf3/numbers.vim'
 endif
-Bundle 'tpope/vim-commentary'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'elzr/vim-json'
-Bundle 'mattn/emmet-vim'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'mattn/emmet-vim'
 
 " tab and indent
 set ts=2 sw=2
