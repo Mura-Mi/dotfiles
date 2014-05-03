@@ -44,3 +44,4 @@ cask install eclipse-ide || true
 cask install google-japanese-ime || true
 cask install skitch || true
 cask install sourcetree || true
+cask install iterm2 || true
