@@ -32,6 +32,8 @@ install readline || true
 install ruby || true
 install tree || true
 install wget || true
+install redis || true
+install graphviz || true
 cask install vagrant || true
 cask install evernote || true
 cask install dropbox || true
@@ -45,3 +47,6 @@ cask install google-japanese-ime || true
 cask install skitch || true
 cask install sourcetree || true
 cask install iterm2 || true
+cask install macvim-kaoriya || true
+cask install mou || true
+cask install disk-inventory-x || true

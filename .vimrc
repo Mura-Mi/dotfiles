@@ -33,6 +33,7 @@ NeoBundle 'tpope/vim-commentary'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'tpope/vim-endwise'
 
 " tab and indent
 set ts=2 sw=2
@@ -177,3 +178,5 @@ map <silent> [Tag]n :tabnext<CR>
 map <silent> [Tag]p :tabprevious<CR>
 " tp 前のタブ
 " ##### TAB PAGE #####
+"
+set vb t_vb=
