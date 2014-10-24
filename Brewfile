@@ -1,25 +1,50 @@
-tap phinze/homebrew-cask
-tap homebrew/versions
-tap homebrew/binary
-update
+# tap repositories and their packages
+
+## caskroom/cask
+tap caskroom/cask
 install brew-cask
-install vim
-install jq
+cask install disk-inventory-x
+cask install dropbox
+cask install evernote
+cask install google-chrome
+cask install google-japanese-ime
+cask install iterm2
+cask install kobito
+cask install mou
+cask install skitch
+cask install skype
+cask install sourcetree
+cask install vagrant
+cask install virtualbox
+cask install yorufukurou
+
+## homebrew/binary
+tap homebrew/binary
+
+## homebrew/versions
+tap homebrew/versions
 install cloog-ppl015
-install cmake
+install gmp4
+install libmpc08
+install mpfr2
+install ppl011
+
+## rcmdnk/file
+tap rcmdnk/file
+install brew-file
+
+# Other Homebrew packages
+install bison
 install freetype
-install gcc47
 install gdbm
 install git
-install gmp4
 install gradle
-install libpng
 install imagemagick
 install jpeg
-install libmpc08
+install jq
+install libpng
 install libtool
 install libyaml
-install mpfr2
 install mysql
 install nkf
 install node
@@ -27,26 +52,10 @@ install openssl
 install ossp-uuid
 install pkg-config
 install postgresql
-install ppl011
 install readline
+install redis
 install ruby
 install tree
+install vim
 install wget
-install redis
-install graphviz
-cask install vagrant
-cask install evernote
-cask install dropbox
-cask install skype
-cask install google-chrome
-cask install yorufukurou
-cask install kobito
-cask install virtualbox
-cask install eclipse-ide
-cask install google-japanese-ime
-cask install skitch
-cask install sourcetree
-cask install iterm2
-cask install macvim-kaoriya
-cask install mou
-cask install disk-inventory-x
+install xz
