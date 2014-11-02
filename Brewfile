@@ -1,4 +1,4 @@
-p repositories and their packages
+# tap repositories and their packages
 
 ## caskroom/cask
 tap caskroom/cask
