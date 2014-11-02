@@ -1,7 +1,7 @@
 tap phinze/homebrew-cask
 tap homebrew/versions
 tap homebrew/binary
-update
+
 install brew-cask
 install vim
 install jq
@@ -34,6 +34,7 @@ install tree
 install wget
 install redis
 install graphviz
+
 cask install vagrant
 cask install evernote
 cask install dropbox

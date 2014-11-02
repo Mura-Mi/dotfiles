@@ -2,10 +2,9 @@
 set nocompatible
 filetype off
 
-" set rtp+=~/dotfiles/neobundle.vim
 if has('vim_starting')
-  set runtimepath+=~/myconfig/neobundle.vim
-  call neobundle#rc(expand('~/.vim/'))
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#begin(expand('~/.vim/'))
 endif
 
 syntax enable
@@ -26,6 +25,7 @@ NeoBundle 'surround.vim'
 NeoBundle 'ruby-matchit'
 NeoBundle 'switch.vim'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'thoughtbot/vim-rspec'
 if v:version > 702 
   NeoBundle 'myusuf3/numbers.vim'
 endif
@@ -34,6 +34,10 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-endwise'
+
+if has('vim_starting')
+  call neobundle#end()
+endif
 
 " tab and indent
 set ts=2 sw=2
@@ -114,6 +118,12 @@ hi DiffAdd ctermfg=black ctermbg=2
 hi DiffChange ctermfg=black ctermbg=3
 hi DiffDelete ctermfg=black ctermbg=6
 hi DiffText ctermfg=black ctermbg=7
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " lightline.vim
 let g:lightline = {
