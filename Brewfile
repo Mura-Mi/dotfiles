@@ -35,6 +35,7 @@ install brew-file
 
 # Other Homebrew packages
 install bison
+install cmake
 install freetype
 install gdbm
 install git
