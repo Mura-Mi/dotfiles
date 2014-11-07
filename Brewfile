@@ -5,10 +5,12 @@ tap caskroom/cask
 install brew-cask
 cask install disk-inventory-x
 cask install dropbox
+cask install eclipse-java
 cask install evernote
 cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
+cask install java
 cask install kobito
 cask install mou
 cask install skitch
@@ -17,8 +19,6 @@ cask install sourcetree
 cask install vagrant
 cask install virtualbox
 cask install yorufukurou
-cask install java
-cask install eclipse-java
 
 ## homebrew/binary
 tap homebrew/binary
