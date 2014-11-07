@@ -7,6 +7,7 @@ fi
 
 # User specific environment and startup programs
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 PATH=$PATH:$HOME/bin:$HOME/.rbenv/bin:/usr/local/share/npm/bin
 
 eval "$(rbenv init -)"

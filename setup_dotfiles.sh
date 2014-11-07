@@ -3,14 +3,14 @@
 cd `dirname $0`
 
 if [ ! -e ~/.vimrc ]; then
-  ln -s ~/myconfig/.vimrc ~/.vimrc
+  ln -s ~/dotfiles/.vimrc ~/.vimrc
 fi
 
 rm ~/.bashrc
-ln -s ~/myconfig/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
 rm ~/.bash_profile
-ln -s ~/myconfig/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/.bash_profile ~/.bash_profile
 
 if [ ! -e ~/.gitconfig ]; then
-  ln -s ~/myconfig/.gitconfig ~/.gitconfig
+  ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 fi
