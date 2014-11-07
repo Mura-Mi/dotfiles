@@ -17,6 +17,8 @@ cask install sourcetree
 cask install vagrant
 cask install virtualbox
 cask install yorufukurou
+cask install java
+cask install eclipse-java
 
 ## homebrew/binary
 tap homebrew/binary
@@ -34,6 +36,7 @@ tap rcmdnk/file
 install brew-file
 
 # Other Homebrew packages
+install autoconf
 install bison
 install freetype
 install gdbm
@@ -52,9 +55,11 @@ install openssl
 install ossp-uuid
 install pkg-config
 install postgresql
+install rbenv
 install readline
 install redis
 install ruby
+install ruby-build
 install tree
 install vim
 install wget
