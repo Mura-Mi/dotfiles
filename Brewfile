@@ -19,6 +19,7 @@ cask install virtualbox
 cask install yorufukurou
 cask install java
 cask install eclipse-java
+cask install coteditor
 
 ## homebrew/binary
 tap homebrew/binary
