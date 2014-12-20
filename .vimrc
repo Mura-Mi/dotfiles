@@ -96,6 +96,9 @@ set laststatus=2
 set showcmd
 set statusline+=%h
 
+" vim-coffee-script
+au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+
 " scroll
 set scrolloff=5
 
