@@ -61,6 +61,10 @@ set history=200
 vnoremap <silent> > >gv
 vnoremap <silent> < <gv
 
+" Increment and Decrement
+nnoremap + <C-a>
+nnoremap - <C-x>
+
 " move to head of line on press 0
 nnoremap <expr> 0
 \  match(strpart(getline('.'), 0, col('.') - 1), '^\s\+$') >= 0 ? '0' : '^'
