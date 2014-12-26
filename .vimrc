@@ -3,8 +3,8 @@ set nocompatible
 filetype off
 
 if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('~/.vim/'))
+  set runtimepath+=$HOME/.vim/bundle/neobundle.vim
+  call neobundle#begin(expand('$HOME/.vim/'))
 endif
 
 syntax enable
