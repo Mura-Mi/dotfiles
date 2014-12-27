@@ -4,7 +4,7 @@ filetype off
 
 if has('vim_starting')
   set runtimepath+=$HOME/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('$HOME/.vim/'))
+  call neobundle#begin(expand('~/.vim/'))
 endif
 
 syntax enable
@@ -34,6 +34,14 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'mklabs/vim-backbone'
+
+NeoBundle 'kannokanno/previm'
+let g:previm_open_cmd = 'open -a /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app'
+augroup PrevimSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
 
 if has('vim_starting')
   call neobundle#end()
