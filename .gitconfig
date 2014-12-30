@@ -6,10 +6,12 @@
 	b = branch
   ba = branch -a
   br = branch -r
+  bd = branch -d
   bar = branch -ar
   bd = branch -d
   co = checkout
   cob = checkout -b
+  cb = checkout -b
   lg = log --oneline
   di = diff
   df = diff
