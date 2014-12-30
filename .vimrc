@@ -22,7 +22,7 @@ NeoBundle 'vim-scripts/vim-auto-save'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'surround.vim'
-NeoBundle 'ruby-matchit'
+" NeoBundle 'ruby-matchit'
 NeoBundle 'switch.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'thoughtbot/vim-rspec'
@@ -64,6 +64,8 @@ set hlsearch
 
 " command history
 set history=200
+
+nnoremap <Esc><Esc> :noh<CR>
 
 " auto indent
 vnoremap <silent> > >gv
@@ -110,6 +112,7 @@ set statusline+=%h
 
 " vim-coffee-script
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+nnoremap <C-m>k :make -c --map<CR>
 
 " scroll
 set scrolloff=5
@@ -153,9 +156,9 @@ endif
 let g:auto_save = 0
 
 " matchit
-if !exists('loaded_matchit')
-  runtime macros/matchit.vim
-endif
+" if !exists('loaded_matchit')
+  " runtime macros/matchit.vim
+" endif
 
 " ##### TAB PAGE #####
 " Anywhere SID.
