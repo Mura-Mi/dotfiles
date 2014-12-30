@@ -14,5 +14,8 @@ alias vimr='vim -R'
 
 alias guess='nkf --guess'
 
+alias grep='grep -n --color=auto'
+alias gr='grep -r'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

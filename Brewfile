@@ -6,7 +6,7 @@ install brew-cask
 cask install disk-inventory-x
 cask install dropbox
 cask install eclipse-java
-cask install evernote
+# cask install evernote
 cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
@@ -22,6 +22,8 @@ cask install yorufukurou
 cask install java
 cask install eclipse-java
 cask install coteditor
+cask install bettertouchtool
+cask install atom
 
 ## homebrew/binary
 tap homebrew/binary
