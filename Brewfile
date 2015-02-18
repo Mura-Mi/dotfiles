@@ -2,6 +2,7 @@
 
 ## caskroom/cask
 tap caskroom/cask
+
 install brew-cask
 cask install disk-inventory-x
 cask install dropbox
@@ -24,6 +25,10 @@ cask install eclipse-java
 cask install coteditor
 cask install bettertouchtool
 cask install atom
+cask install karabiner
+
+tap karan/karan
+install gitignore
 
 ## homebrew/binary
 tap homebrew/binary
@@ -47,6 +52,7 @@ install cmake
 install freetype
 install gdbm
 install git
+install git-flow
 install gradle
 install imagemagick
 install jpeg
@@ -70,3 +76,4 @@ install tree
 install vim
 install wget
 install xz
+install graphviz
