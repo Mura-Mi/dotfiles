@@ -19,13 +19,13 @@ cask install skype
 cask install sourcetree
 cask install vagrant
 cask install virtualbox
-cask install yorufukurou
 cask install java
 cask install eclipse-java
 cask install coteditor
 cask install bettertouchtool
 cask install atom
 cask install karabiner
+cask install night-owl
 
 tap karan/karan
 install gitignore
@@ -77,3 +77,8 @@ install vim
 install wget
 install xz
 install graphviz
+install subversion
+install scala
+install sbt
+install leiningen
+
