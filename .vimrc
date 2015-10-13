@@ -35,6 +35,8 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'mklabs/vim-backbone'
+NeoBundle 'leafgarland/typescript-vim.git'
+NeoBundle 'clausreinke/typescript-tools.git'
 
 NeoBundle 'kannokanno/previm'
 let g:previm_open_cmd = 'open -a /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app'

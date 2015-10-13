@@ -18,3 +18,4 @@ LANG=en_US.UTF-8
 
 export LANG
 
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}

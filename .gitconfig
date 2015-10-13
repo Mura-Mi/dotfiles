@@ -2,17 +2,23 @@
 	name = Takuya \"Mura-Mi\" Murakami
 	email = mura.mi.nantoka@gmail.com
 [alias]
-	st = status
+  c = commit -m
+  ca = commit -a -m
+  cam = commit -a -m
+  st = status
 	b = branch
   ba = branch -a
   br = branch -r
   bd = branch -d
   bar = branch -ar
+  bra = branch -ra
   bd = branch -d
+  pra = fetch --prune --all
   co = checkout
   cob = checkout -b
   cb = checkout -b
-  lg = log --oneline
+  lo = log --oneline
+  l = log
   di = diff
   df = diff
   ad = add
