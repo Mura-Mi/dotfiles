@@ -2,6 +2,7 @@
 	name = Takuya \"Mura-Mi\" Murakami
 	email = mura.mi.nantoka@gmail.com
 [alias]
+  logg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
   c = commit -m
   ca = commit -a -m
   cam = commit -a -m
