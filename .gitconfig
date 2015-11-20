@@ -7,7 +7,7 @@
   ca = commit -a -m
   cam = commit -a -m
   st = status
-	b = branch
+  b = branch
   ba = branch -a
   br = branch -r
   bd = branch -d
@@ -22,6 +22,7 @@
   l = log
   di = diff
   df = diff
+  diffst = diff --staged
   ad = add
   rb = rebase
 
