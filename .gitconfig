@@ -26,6 +26,7 @@
   diffst = diff --staged
   ad = add
   rb = rebase
+  lv = remote -v
 
 [core]
 	editor = /usr/bin/vim
