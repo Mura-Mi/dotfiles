@@ -24,3 +24,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # added by travis gem
 [ -f /Users/mura_mi/.travis/travis.sh ] && source /Users/mura_mi/.travis/travis.sh
+
+source ~/.git-completion.bash

@@ -19,3 +19,6 @@ LANG=en_US.UTF-8
 export LANG
 
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
