@@ -26,3 +26,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [ -f /Users/mura_mi/.travis/travis.sh ] && source /Users/mura_mi/.travis/travis.sh
 
 source ~/.git-completion.bash
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/$USER/.sdkman"
+[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
