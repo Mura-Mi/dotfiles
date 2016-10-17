@@ -18,7 +18,7 @@ NeoBundleFetch 'Shugo/neobundle.vim'
 
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'vim-scripts/vim-auto-save'
+" NeoBundle 'vim-scripts/vim-auto-save'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'surround.vim'
