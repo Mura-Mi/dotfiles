@@ -10,7 +10,7 @@ workdir = "/Users/#{ENV['USER']}/work"
 mkdir_if_not_exists(workdir)
 
 Dir.glob(File.join(workdir, '*')).each do |dir|
-  Dir.rmdir(dir) if Dir[File.join(dir, '*')].empty?
+  Dir.rmdir(dir) if Dir[File.join(dir, '*')].empty? && Dir.exists?(dir)
 end
 
 dailydir = File.join(workdir, Date.today.strftime('%Y%m%d'))
