@@ -28,9 +28,12 @@
   di = diff
   df = diff
   diffst = diff --staged
+  dw = diff -w
   ad = add
   rb = rebase
   rv = remote -v
+  reword = commit --amend
+  amend = commit --amend
 
 [core]
 	editor = /usr/bin/vim
