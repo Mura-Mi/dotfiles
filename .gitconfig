@@ -34,6 +34,9 @@
   rv = remote -v
   reword = commit --amend
   amend = commit --amend
+  fixup = "!f() { git commit --fixup $1; }; f"
+  sq = "!f() { git rebase -i $1 --autosquash; }; f"
+  squash = "!f() { git rebase -i $1 --autosquash; }; f"
 
 [core]
 	editor = /usr/bin/vim
