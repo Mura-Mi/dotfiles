@@ -36,7 +36,8 @@
   amend = commit --amend
   fixup = "!f() { git commit --fixup $1; }; f"
   sq = "!f() { git rebase -i $1 --autosquash; }; f"
-  squash = "!f() { git rebase -i $1 --autosquash; }; f"
+  squash = "!f() { git rebase -i HEAD~$1 --autosquash; }; f"
+  startpr = commit --allow-empty -m 
 
 [core]
 	editor = /usr/bin/vim
