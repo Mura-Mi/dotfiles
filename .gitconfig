@@ -28,7 +28,7 @@
   di = diff
   df = diff
   diffst = diff --staged
-  dw = diff -w
+  dw = diff --color-words=.
   ad = add
   rb = rebase
   rv = remote -v
@@ -36,8 +36,11 @@
   amend = commit --amend
   fixup = "!f() { git commit --fixup $1; }; f"
   sq = "!f() { git rebase -i $1 --autosquash; }; f"
-  squash = "!f() { git rebase -i HEAD~$1 --autosquash; }; f"
+  squash = "!f() { git rebase -i $1 --autosquash; }; f"
   startpr = commit --allow-empty -m 
+  stashes = stash list
+  catchup = "!f() { git fetch upstream && git checkout master && git merge upstream/master; }; f"
+  eva = stash save 
 
 [core]
 	editor = /usr/bin/vim
