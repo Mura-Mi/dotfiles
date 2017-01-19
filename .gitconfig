@@ -41,6 +41,8 @@
   stashes = stash list
   catchup = "!f() { git fetch upstream && git checkout master && git merge upstream/master; }; f"
   eva = stash save 
+  latest = diff HEAD^ HEAD
+  bclean = "!f() { git branch | egrep -v master | xargs git branch -d; }; f"
 
 [core]
 	editor = /usr/bin/vim
