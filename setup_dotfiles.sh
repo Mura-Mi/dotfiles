@@ -6,7 +6,10 @@ if [ ! -e ~/.vimrc ]; then
   ln -s ~/dotfiles/.vimrc ~/.vimrc
 fi
 
-rm ~/.bashrc
+if [ -e ~/.bashrc ]; then
+  rm ~/.bashrc
+fi
+
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 rm ~/.bash_profile
 ln -s ~/dotfiles/.bash_profile ~/.bash_profile
