@@ -11,6 +11,7 @@ alias ll='ls -l'
 alias la='ls -la'
 alias vir='vim -R'
 alias vimr='vim -R'
+alias gti='git'
 
 alias guess='nkf --guess'
 
