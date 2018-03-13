@@ -47,6 +47,7 @@
   catchup = "!f() { git fetch upstream && git checkout master && git merge upstream/master && git remote prune origin; }; f"
   latest = diff HEAD^ HEAD
   bclean = "!f() { git branch | egrep -v master | xargs git branch -d; }; f"
+  addp = add -p
 
 [core]
 	editor = /usr/bin/vim
@@ -55,3 +56,6 @@
 
 [status]
   showUntrackedFiles = all
+
+[ghq]
+    root = ~/dev
