@@ -17,3 +17,7 @@ ln -s ~/dotfiles/.bash_profile ~/.bash_profile
 if [ ! -e ~/.gitconfig ]; then
   ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 fi
+
+if [ ! -e ~/.zshrc ]; then
+  ln -s ~/dotfiles/.zshrc ~/.zshrc
+fi
