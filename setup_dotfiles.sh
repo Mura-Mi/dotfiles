@@ -21,3 +21,10 @@ fi
 if [ ! -e ~/.zshrc ]; then
   ln -s ~/dotfiles/.zshrc ~/.zshrc
 fi
+
+cp -r ./.sbt $HOME/.sbt
+  
+if [ ! -e ~/.sbtrc ]; then
+  ln -s ./.sbtrc $HOME/
+fi
+

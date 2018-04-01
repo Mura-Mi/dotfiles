@@ -1,0 +1,5 @@
+alias to=test-only
+alias tc=test:compile
+alias r=reload
+alias c=compile
+alias t=test
