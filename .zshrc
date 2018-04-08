@@ -6,8 +6,9 @@ fi
 
 source $ZPLUG_HOME/init.zsh
 
-zplug "dracula/zsh", as:theme
-# zplug "themes/dieter", as:theme, from:oh-my-zsh
+# zplug "dracula/zsh", as:theme
+zplug mafredri/zsh-async, from:github
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 if ! zplug check --verbose; then
   printf "Install? [y/N]: "
