@@ -51,9 +51,6 @@ alias la='ls -la'
 alias vir='vim -R'
 alias vimr='vim -R'
 
-alias grep='grep -n --color=auto'
-alias gr='grep -r'
-
 # alias for git
 alias gti='git'
 alias g='git'
@@ -70,3 +67,5 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
