@@ -50,7 +50,10 @@
   addp = add -p
 
 [core]
+    pager = delta
 	editor = /usr/bin/vim
+	autocrlf = input
+
 [color]
   ui = true
 
@@ -59,3 +62,20 @@
 
 [ghq]
     root = ~/dev
+[rebase]
+	autosquash = true
+
+[pager]
+	branch = cat
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default

@@ -1,53 +1,57 @@
-" ##### vundle Setting #####
-set nocompatible
-filetype off
-
-if has('vim_starting')
-  set runtimepath+=$HOME/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('~/.vim/'))
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
+" Required:
+set runtimepath+=/Users/mura_mi/.cache/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+call dein#begin('/Users/mura_mi/.cache/dein')
+
+" Let dein manage dein
+" Required:
+call dein#add('/Users/mura_mi/.cache/dein/repos/github.com/Shougo/dein.vim')
+
+" Add or remove your plugins here like this:
+"call dein#add('Shougo/neosnippet.vim')
+"call dein#add('Shougo/neosnippet-snippets')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('itchyny/lightline.vim')
+call dein#add('tpope/vim-fugitive')
+call dein#add('gregsexton/gitv')
+call dein#add('vim-scripts/surround.vim')
+call dein#add('vim-scripts/switch.vim')
+if v:version > 702 
+  call dein#add('myusuf3/numbers.vim')
+endif
+call dein#add('tpope/vim-commentary')
+call dein#add('terryma/vim-multiple-cursors')
+call dein#add('elzr/vim-json')
+call dein#add('mattn/emmet-vim')
+call dein#add('tpope/vim-endwise')
+
+call dein#add('kannokanno/previm')
+
+" Required:
+call dein#end()
+
+" Required:
+filetype plugin indent on
 syntax enable
 
-filetype plugin indent on
-" ##### NeoBundle Setting #####
+" If you want to install not installed plugins on startup.
+" if dein#check_install()
+"   call dein#install()
+" endif
 
-" NeoBundle 
-NeoBundleCheck
-NeoBundleFetch 'Shugo/neobundle.vim'
+"End dein Scripts-------------------------
 
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'itchyny/lightline.vim'
-" NeoBundle 'vim-scripts/vim-auto-save'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'gregsexton/gitv'
-NeoBundle 'surround.vim'
-" NeoBundle 'ruby-matchit'
-NeoBundle 'switch.vim'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'thoughtbot/vim-rspec'
-if v:version > 702 
-  NeoBundle 'myusuf3/numbers.vim'
-endif
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'mklabs/vim-backbone'
-NeoBundle 'leafgarland/typescript-vim.git'
-NeoBundle 'clausreinke/typescript-tools.git'
-
-NeoBundle 'kannokanno/previm'
 let g:previm_open_cmd = 'open -a /opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app'
 augroup PrevimSettings
   autocmd!
   autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
-
-if has('vim_starting')
-  call neobundle#end()
-endif
 
 " tab and indent
 set ts=2 sw=2

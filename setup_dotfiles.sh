@@ -20,3 +20,6 @@ if [ ! -e ~/.sbtrc -o ! -L ~/.sbtrc ]; then
   ln -s ~/dotfiles/.sbtrc ~/.sbtrc
 fi
 
+if [ ! -e ~/Brewfile -o ! -L ~/Brewfile ]; then
+  ln -s ~/dotfiles/Brewfile ~/Brewfile
+fi

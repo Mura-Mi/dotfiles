@@ -46,8 +46,8 @@ export LESS_TERMCAP_ue=$'\E[0m'          # Ends underline.
 export LESS_TERMCAP_us=$'\E[01;32m'      # Begins underline.
 
 # shell alias
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='exa -l'
+alias la='exa -la'
 alias vir='vim -R'
 alias vimr='vim -R'
 
@@ -69,3 +69,30 @@ zle -N peco-src
 bindkey '^]' peco-src
 
 function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
+eval "$(starship init zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+_direnv_hook() {
+  trap -- '' SIGINT;
+  eval "$("/opt/homebrew/bin/direnv" export zsh)";
+  trap - SIGINT;
+}
+typeset -ag precmd_functions;
+if [[ -z "${precmd_functions[(r)_direnv_hook]+1}" ]]; then
+  precmd_functions=( _direnv_hook ${precmd_functions[@]} )
+fi
+typeset -ag chpwd_functions;
+if [[ -z "${chpwd_functions[(r)_direnv_hook]+1}" ]]; then
+  chpwd_functions=( _direnv_hook ${chpwd_functions[@]} )
+fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mura_mi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mura_mi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mura_mi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mura_mi/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(pyenv init -)"
