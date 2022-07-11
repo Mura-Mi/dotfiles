@@ -14,6 +14,11 @@ if [ ! -e ~/.zshrc -o ! -L ~/.zshrc ]; then
   ln -s ~/dotfiles/.zshrc ~/.zshrc
 fi
 
+if [ ! -e ~/.zimrc -o ! -L ~/.zimrc ]; then
+  ln -s ~/dotfiles/.zimrc ~/.zimrc
+fi
+
+
 cp -r ./.sbt $HOME/.sbt
   
 if [ ! -e ~/.sbtrc -o ! -L ~/.sbtrc ]; then
