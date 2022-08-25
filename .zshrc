@@ -170,7 +170,7 @@ if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh
 if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
 
 # pyenv / virtualenv
-if [ -f "$HOME/.pyenv" ]; then
+if [ -d "$HOME/.pyenv" ]; then
   export PYENV_ROOT="$HOME/.pyenv"
   command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
@@ -178,7 +178,7 @@ if [ -f "$HOME/.pyenv" ]; then
 fi
 
 
-if [ -f "$HOME/.pyenv" ]; then
+if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
