@@ -145,15 +145,6 @@ function peco-src () {
 zle -N peco-src
 bindkey '^]' peco-src
 
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-_direnv_hook() {
-  trap -- '' SIGINT;
-  eval "$("/opt/homebrew/bin/direnv" export zsh)";
-  trap - SIGINT;
-}
 typeset -ag precmd_functions;
 if [[ -z "${precmd_functions[(r)_direnv_hook]+1}" ]]; then
   precmd_functions=( _direnv_hook ${precmd_functions[@]} )
@@ -163,26 +154,14 @@ if [[ -z "${chpwd_functions[(r)_direnv_hook]+1}" ]]; then
   chpwd_functions=( _direnv_hook ${chpwd_functions[@]} )
 fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
-
-# pyenv / virtualenv
-if [ -d "$HOME/.pyenv" ]; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
-fi
-
-
-if [ -d "$HOME/.rbenv" ]; then
-  eval "$(rbenv init -)"
-fi
-
 eval "$(starship init zsh)"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
+if (which zprof > /dev/null 2>&1) ;then
+  zprof
+fi
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
